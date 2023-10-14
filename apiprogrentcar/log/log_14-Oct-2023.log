@@ -1,0 +1,188 @@
+PDOException: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens in C:\xampp\htdocs\ProgRentCar\apiprogrentcar\cliente\cliente.php:170
+Stack trace:
+#0 C:\xampp\htdocs\ProgRentCar\apiprogrentcar\cliente\cliente.php(170): PDOStatement->execute()
+#1 C:\xampp\htdocs\ProgRentCar\apiprogrentcar\cliente\editar.php(44): cliente->update()
+#2 {main}
+PDOException: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens in C:\xampp\htdocs\ProgRentCar\apiprogrentcar\cliente\cliente.php:170
+Stack trace:
+#0 C:\xampp\htdocs\ProgRentCar\apiprogrentcar\cliente\cliente.php(170): PDOStatement->execute()
+#1 C:\xampp\htdocs\ProgRentCar\apiprogrentcar\cliente\editar.php(44): cliente->update()
+#2 {main}
+23-10-14 11:52:10 - Error al insertar datos cliente 5 
+PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '(nombre, 
+                           apellido, 
+                           ...' at line 1 in C:\xampp\htdocs\ProgRentCar\apiprogrentcar\cliente\cliente.php:101
+Stack trace:
+#0 C:\xampp\htdocs\ProgRentCar\apiprogrentcar\cliente\cliente.php(101): PDOStatement->execute()
+#1 C:\xampp\htdocs\ProgRentCar\apiprogrentcar\cliente\agregar.php(44): cliente->create()
+#2 {main}
+23-10-14 11:53:15 - Error al insertar datos cliente 5 
+PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '(nombre, 
+                           apellido, 
+                           ...' at line 1 in C:\xampp\htdocs\ProgRentCar\apiprogrentcar\cliente\cliente.php:101
+Stack trace:
+#0 C:\xampp\htdocs\ProgRentCar\apiprogrentcar\cliente\cliente.php(101): PDOStatement->execute()
+#1 C:\xampp\htdocs\ProgRentCar\apiprogrentcar\cliente\agregar.php(44): cliente->create()
+#2 {main}
+23-10-14 11:53:58 - Error al insertar datos cliente 5 
+PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '(nombre, 
+                           apellido, 
+                           ...' at line 1 in C:\xampp\htdocs\ProgRentCar\apiprogrentcar\cliente\cliente.php:101
+Stack trace:
+#0 C:\xampp\htdocs\ProgRentCar\apiprogrentcar\cliente\cliente.php(101): PDOStatement->execute()
+#1 C:\xampp\htdocs\ProgRentCar\apiprogrentcar\cliente\agregar.php(44): cliente->create()
+#2 {main}
+23-10-14 11:56:17 - Error al insertar datos cliente 5 
+PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '(nombre, 
+                           apellido, 
+                           ...' at line 1 in C:\xampp\htdocs\ProgRentCar\apiprogrentcar\cliente\cliente.php:101
+Stack trace:
+#0 C:\xampp\htdocs\ProgRentCar\apiprogrentcar\cliente\cliente.php(101): PDOStatement->execute()
+#1 C:\xampp\htdocs\ProgRentCar\apiprogrentcar\cliente\agregar.php(44): cliente->create()
+#2 {main}
+23-10-14 11:56:19 - Error al insertar datos cliente 5 
+PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '(nombre, 
+                           apellido, 
+                           ...' at line 1 in C:\xampp\htdocs\ProgRentCar\apiprogrentcar\cliente\cliente.php:101
+Stack trace:
+#0 C:\xampp\htdocs\ProgRentCar\apiprogrentcar\cliente\cliente.php(101): PDOStatement->execute()
+#1 C:\xampp\htdocs\ProgRentCar\apiprogrentcar\cliente\agregar.php(44): cliente->create()
+#2 {main}
+23-10-14 11:56:21 - Error al insertar datos cliente 5 
+PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '(nombre, 
+                           apellido, 
+                           ...' at line 1 in C:\xampp\htdocs\ProgRentCar\apiprogrentcar\cliente\cliente.php:101
+Stack trace:
+#0 C:\xampp\htdocs\ProgRentCar\apiprogrentcar\cliente\cliente.php(101): PDOStatement->execute()
+#1 C:\xampp\htdocs\ProgRentCar\apiprogrentcar\cliente\agregar.php(44): cliente->create()
+#2 {main}
+23-10-14 11:56:21 - Error al insertar datos cliente 5 
+PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '(nombre, 
+                           apellido, 
+                           ...' at line 1 in C:\xampp\htdocs\ProgRentCar\apiprogrentcar\cliente\cliente.php:101
+Stack trace:
+#0 C:\xampp\htdocs\ProgRentCar\apiprogrentcar\cliente\cliente.php(101): PDOStatement->execute()
+#1 C:\xampp\htdocs\ProgRentCar\apiprogrentcar\cliente\agregar.php(44): cliente->create()
+#2 {main}
+23-10-14 11:56:21 - Error al insertar datos cliente 5 
+PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '(nombre, 
+                           apellido, 
+                           ...' at line 1 in C:\xampp\htdocs\ProgRentCar\apiprogrentcar\cliente\cliente.php:101
+Stack trace:
+#0 C:\xampp\htdocs\ProgRentCar\apiprogrentcar\cliente\cliente.php(101): PDOStatement->execute()
+#1 C:\xampp\htdocs\ProgRentCar\apiprogrentcar\cliente\agregar.php(44): cliente->create()
+#2 {main}
+23-10-14 11:58:57 - Error al insertar datos cliente 5 
+PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '(nombre, 
+                           apellido, 
+                           ...' at line 1 in C:\xampp\htdocs\ProgRentCar\apiprogrentcar\cliente\cliente.php:101
+Stack trace:
+#0 C:\xampp\htdocs\ProgRentCar\apiprogrentcar\cliente\cliente.php(101): PDOStatement->execute()
+#1 C:\xampp\htdocs\ProgRentCar\apiprogrentcar\cliente\agregar.php(44): cliente->create()
+#2 {main}
+23-10-14 11:59:29 - Error al insertar datos usuario 5 
+PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '(nombre, 
+                           apellido, 
+                           ...' at line 1 in C:\xampp\htdocs\ProgRentCar\apiprogrentcar\cliente\cliente.php:101
+Stack trace:
+#0 C:\xampp\htdocs\ProgRentCar\apiprogrentcar\cliente\cliente.php(101): PDOStatement->execute()
+#1 C:\xampp\htdocs\ProgRentCar\apiprogrentcar\cliente\agregar.php(44): cliente->create()
+#2 {main}
+23-10-14 11:59:45 - Error al insertar datos usuario 5 
+PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '(nombre, 
+                           apellido, 
+                           ...' at line 1 in C:\xampp\htdocs\ProgRentCar\apiprogrentcar\cliente\cliente.php:101
+Stack trace:
+#0 C:\xampp\htdocs\ProgRentCar\apiprogrentcar\cliente\cliente.php(101): PDOStatement->execute()
+#1 C:\xampp\htdocs\ProgRentCar\apiprogrentcar\cliente\agregar.php(44): cliente->create()
+#2 {main}
+23-10-14 11:59:50 - Error al insertar datos usuario 5 
+PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '(nombre, 
+                           apellido, 
+                           ...' at line 1 in C:\xampp\htdocs\ProgRentCar\apiprogrentcar\cliente\cliente.php:101
+Stack trace:
+#0 C:\xampp\htdocs\ProgRentCar\apiprogrentcar\cliente\cliente.php(101): PDOStatement->execute()
+#1 C:\xampp\htdocs\ProgRentCar\apiprogrentcar\cliente\agregar.php(44): cliente->create()
+#2 {main}
+23-10-14 12:02:23 - Error al insertar datos usuario 5 
+PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '(nombre, 
+                           apellido, 
+                           ...' at line 1 in C:\xampp\htdocs\ProgRentCar\apiprogrentcar\cliente\cliente.php:101
+Stack trace:
+#0 C:\xampp\htdocs\ProgRentCar\apiprogrentcar\cliente\cliente.php(101): PDOStatement->execute()
+#1 C:\xampp\htdocs\ProgRentCar\apiprogrentcar\cliente\agregar.php(44): cliente->create()
+#2 {main}
+23-10-14 12:03:08 - Error al insertar datos usuario 5 
+PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '(nombre, 
+                           apellido, 
+                           ...' at line 1 in C:\xampp\htdocs\ProgRentCar\apiprogrentcar\cliente\cliente.php:101
+Stack trace:
+#0 C:\xampp\htdocs\ProgRentCar\apiprogrentcar\cliente\cliente.php(101): PDOStatement->execute()
+#1 C:\xampp\htdocs\ProgRentCar\apiprogrentcar\cliente\agregar.php(44): cliente->create()
+#2 {main}
+23-10-14 12:16:30 - Error al insertar datos marca 5 
+PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'nombre' in 'field list' in C:\xampp\htdocs\ProgRentCar\apiprogrentcar\marca\marca.php:64
+Stack trace:
+#0 C:\xampp\htdocs\ProgRentCar\apiprogrentcar\marca\marca.php(64): PDOStatement->execute()
+#1 C:\xampp\htdocs\ProgRentCar\apiprogrentcar\marca\agregar.php(37): marca->create()
+#2 {main}
+23-10-14 12:21:59 - Error al insertar datos marca 5 
+PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'nombre' in 'field list' in C:\xampp\htdocs\ProgRentCar\apiprogrentcar\marca\marca.php:64
+Stack trace:
+#0 C:\xampp\htdocs\ProgRentCar\apiprogrentcar\marca\marca.php(64): PDOStatement->execute()
+#1 C:\xampp\htdocs\ProgRentCar\apiprogrentcar\marca\agregar.php(37): marca->create()
+#2 {main}
+23-10-14 12:23:40 - Error al insertar datos marca 5 
+PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'nombre' in 'field list' in C:\xampp\htdocs\ProgRentCar\apiprogrentcar\marca\marca.php:64
+Stack trace:
+#0 C:\xampp\htdocs\ProgRentCar\apiprogrentcar\marca\marca.php(64): PDOStatement->execute()
+#1 C:\xampp\htdocs\ProgRentCar\apiprogrentcar\marca\agregar.php(37): marca->create()
+#2 {main}
+23-10-14 12:25:02 - Error al insertar datos marca 5 
+PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'nombre' in 'field list' in C:\xampp\htdocs\ProgRentCar\apiprogrentcar\marca\marca.php:64
+Stack trace:
+#0 C:\xampp\htdocs\ProgRentCar\apiprogrentcar\marca\marca.php(64): PDOStatement->execute()
+#1 C:\xampp\htdocs\ProgRentCar\apiprogrentcar\marca\agregar.php(37): marca->create()
+#2 {main}
+23-10-14 12:25:04 - Error al insertar datos marca 5 
+PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'nombre' in 'field list' in C:\xampp\htdocs\ProgRentCar\apiprogrentcar\marca\marca.php:64
+Stack trace:
+#0 C:\xampp\htdocs\ProgRentCar\apiprogrentcar\marca\marca.php(64): PDOStatement->execute()
+#1 C:\xampp\htdocs\ProgRentCar\apiprogrentcar\marca\agregar.php(37): marca->create()
+#2 {main}
+23-10-14 12:25:05 - Error al insertar datos marca 5 
+PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'nombre' in 'field list' in C:\xampp\htdocs\ProgRentCar\apiprogrentcar\marca\marca.php:64
+Stack trace:
+#0 C:\xampp\htdocs\ProgRentCar\apiprogrentcar\marca\marca.php(64): PDOStatement->execute()
+#1 C:\xampp\htdocs\ProgRentCar\apiprogrentcar\marca\agregar.php(37): marca->create()
+#2 {main}
+23-10-14 12:25:05 - Error al insertar datos marca 5 
+PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'nombre' in 'field list' in C:\xampp\htdocs\ProgRentCar\apiprogrentcar\marca\marca.php:64
+Stack trace:
+#0 C:\xampp\htdocs\ProgRentCar\apiprogrentcar\marca\marca.php(64): PDOStatement->execute()
+#1 C:\xampp\htdocs\ProgRentCar\apiprogrentcar\marca\agregar.php(37): marca->create()
+#2 {main}
+23-10-14 12:25:06 - Error al insertar datos marca 5 
+PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'nombre' in 'field list' in C:\xampp\htdocs\ProgRentCar\apiprogrentcar\marca\marca.php:64
+Stack trace:
+#0 C:\xampp\htdocs\ProgRentCar\apiprogrentcar\marca\marca.php(64): PDOStatement->execute()
+#1 C:\xampp\htdocs\ProgRentCar\apiprogrentcar\marca\agregar.php(37): marca->create()
+#2 {main}
+23-10-14 12:25:06 - Error al insertar datos marca 5 
+PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'nombre' in 'field list' in C:\xampp\htdocs\ProgRentCar\apiprogrentcar\marca\marca.php:64
+Stack trace:
+#0 C:\xampp\htdocs\ProgRentCar\apiprogrentcar\marca\marca.php(64): PDOStatement->execute()
+#1 C:\xampp\htdocs\ProgRentCar\apiprogrentcar\marca\agregar.php(37): marca->create()
+#2 {main}
+23-10-14 12:25:06 - Error al insertar datos marca 5 
+PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'nombre' in 'field list' in C:\xampp\htdocs\ProgRentCar\apiprogrentcar\marca\marca.php:64
+Stack trace:
+#0 C:\xampp\htdocs\ProgRentCar\apiprogrentcar\marca\marca.php(64): PDOStatement->execute()
+#1 C:\xampp\htdocs\ProgRentCar\apiprogrentcar\marca\agregar.php(37): marca->create()
+#2 {main}
+23-10-14 12:25:08 - Error al insertar datos marca 5 
+PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'nombre' in 'field list' in C:\xampp\htdocs\ProgRentCar\apiprogrentcar\marca\marca.php:64
+Stack trace:
+#0 C:\xampp\htdocs\ProgRentCar\apiprogrentcar\marca\marca.php(64): PDOStatement->execute()
+#1 C:\xampp\htdocs\ProgRentCar\apiprogrentcar\marca\agregar.php(37): marca->create()
+#2 {main}

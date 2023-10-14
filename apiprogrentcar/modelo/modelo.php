@@ -1,13 +1,11 @@
 <?php
 
-class usuario {
+class modelo {
 
 private $conn;
 
-public $id_usuario;
-public $nombre;
-public $usuario;
-public $clave;
+public $id_modelo;
+public $descripcion;
 public $estado;
 
      // constructor
@@ -17,7 +15,7 @@ public function __construct($db){
 
  // GET ALL
  function getAll(){
-    $sqlQuery = "SELECT id_usuario, nombre, usuario, clave, estado FROM usuario";
+    $sqlQuery = "SELECT id_modelo, descripcion, estado FROM modelo";
     $stmt = $this->conn->prepare($sqlQuery);
     $stmt->execute();
     return $stmt;
@@ -25,9 +23,9 @@ public function __construct($db){
 
 // GET ONE
 function getOne(){
-   $sqlQuery = "SELECT id_usuario, nombre, usuario, clave, estado 
-   FROM usuario
-   WHERE id_usuario = ". $this->id_usuario ;
+   $sqlQuery = "SELECT id_modelo, descripcion, estado 
+   FROM modelo
+   WHERE id_modelo = ". $this->id_modelo;
    $stmt = $this->conn->prepare($sqlQuery);
    $stmt->execute();
    return $stmt;
@@ -38,15 +36,11 @@ function getOne(){
   function create(){
    try{
    // insert query
-      $query = "INSERT INTO usuario( 
-                           nombre,
-                           usuario,
-                           clave, 
+      $query = "INSERT INTO modelo(
+                           descripcion,
                            estado) 
                            VALUES (
-                           :nombre,
-                           :usuario, 
-                           :clave,
+                           :descripcion,
                            :estado)";
       
       
@@ -55,15 +49,11 @@ function getOne(){
 
    // sanitize
    
-$this->nombre=htmlspecialchars(strip_tags($this->nombre));
-$this->usuario=htmlspecialchars(strip_tags($this->usuario));  
-$this->clave=htmlspecialchars(strip_tags($this->clave));
+$this->descripcion=htmlspecialchars(strip_tags($this->descripcion));  
 $this->estado=htmlspecialchars(strip_tags($this->estado));
 
 
-$stmt->bindParam(':nombre', $this->nombre);
-$stmt->bindParam(':usuario', $this->usuario);
-$stmt->bindParam(':clave', $this->clave);
+$stmt->bindParam(':descripcion', $this->descripcion);
 $stmt->bindParam(':estado', $this->estado);
    
    // execute the query, also check if query was successful
@@ -73,7 +63,7 @@ $stmt->bindParam(':estado', $this->estado);
    }
    
 }catch(PDOException $exception){
-   wh_log( date("y-m-d H:i:s"). " - ".   "Error al insertar datos usuario 5 ".  $table );
+   wh_log( date("y-m-d H:i:s"). " - ".   "Error al insertar datos modelo 5 ". $table);
    wh_log( $exception   );
    
    
@@ -89,12 +79,10 @@ $stmt->bindParam(':estado', $this->estado);
    try{
    // insert query
       $query = "UPDATE 
-      usuario
+       modelo
        SET 
-      nombre  = :nombre,
-      usuario = :usuario,
-      clave  :clave ,
-      estado = :estado WHERE id_usuario = :id_usuario" ;
+      descripcion = :descripcion,
+      estado = :estado WHERE id_modelo = :id_modelo" ;
       
       
    // prepare the query
@@ -102,16 +90,12 @@ $stmt->bindParam(':estado', $this->estado);
 
    // sanitize
    
-$this->id_usuario=htmlspecialchars(strip_tags($this->id_usuario));
-$this->nombre=htmlspecialchars(strip_tags($this->nombre));
-$this->usuario=htmlspecialchars(strip_tags($this->usuario));  
-$this->clave=htmlspecialchars(strip_tags($this->clave));
+$this->id_modelo=htmlspecialchars(strip_tags($this->id_modelo));
+$this->descripcion=htmlspecialchars(strip_tags($this->descripcion));  
 $this->estado=htmlspecialchars(strip_tags($this->estado));
 
-$stmt->bindParam(':id_usuario', $this->id_usuario);
-$stmt->bindParam(':nombre', $this->nombre);
-$stmt->bindParam(':usuario', $this->usuario);
-$stmt->bindParam(':clave', $this->clave);
+$stmt->bindParam(':id_modelo', $this->id_modelo);
+$stmt->bindParam(':descripcion', $this->descripcion);
 $stmt->bindParam(':estado', $this->estado);
    
    // execute the query, also check if query was successful
@@ -121,7 +105,7 @@ $stmt->bindParam(':estado', $this->estado);
    }
    
 }catch(PDOException $exception){
-   wh_log( date("y-m-d H:i:s"). " - ".   "Error al insertar datos usuario 5 ".  $table );
+   wh_log( date("y-m-d H:i:s"). " - ".   "Error al insertar datos modelo 5 ".  $table );
    wh_log( $exception   );
    
    
@@ -137,9 +121,9 @@ $stmt->bindParam(':estado', $this->estado);
    try{
    // insert query
       $query = "UPDATE 
-      usuario
+      modelo
        SET 
-      estado = :estado WHERE id_usuario = :id_usuario" ;
+      estado = :estado WHERE id_modelo = :id_modelo" ;
       
       
    // prepare the query
@@ -147,10 +131,10 @@ $stmt->bindParam(':estado', $this->estado);
 
    // sanitize
    
-$this->id_usuario=htmlspecialchars(strip_tags($this->id_usuario));
+$this->id_modelo=htmlspecialchars(strip_tags($this->id_modelo));
 $this->estado=htmlspecialchars(strip_tags($this->estado));
 
-$stmt->bindParam(':id_usuario', $this->id_usuario);
+$stmt->bindParam(':id_modelo', $this->id_modelo);
 $stmt->bindParam(':estado', $this->estado);
    
    // execute the query, also check if query was successful
@@ -160,7 +144,7 @@ $stmt->bindParam(':estado', $this->estado);
    }
    
 }catch(PDOException $exception){
-   wh_log( date("y-m-d H:i:s"). " - ".   "Error al insertar datos usuario 5 ".  $table );
+   wh_log( date("y-m-d H:i:s"). " - ".   "Error al insertar datos modelo 5 ".  $table );
    wh_log( $exception   );
    
    
