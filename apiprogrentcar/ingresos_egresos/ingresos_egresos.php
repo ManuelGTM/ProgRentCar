@@ -3,7 +3,6 @@
 class ingresos_egresos{
 
 private $conn;
-
 public $id_reposicion;
 public $monto;
 public $descripcion;
