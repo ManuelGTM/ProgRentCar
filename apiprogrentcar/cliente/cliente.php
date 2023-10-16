@@ -47,7 +47,8 @@ function getOne(){
   function create(){
    try{
    // insert query
-      $query = "INSERT INTO(nombre, 
+      $query = "INSERT INTO cliente(
+                           nombre, 
                            apellido, 
                            tipo_identificacion, 
                            numero_identificacion, 

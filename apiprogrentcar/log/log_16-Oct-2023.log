@@ -1,0 +1,38 @@
+23-10-16 08:48:07 - Error al insertar datos usuario 5 
+PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '(nombre, 
+                           apellido, 
+                           ...' at line 1 in C:\xampp\htdocs\ProgRentCar\apiprogrentcar\cliente\cliente.php:101
+Stack trace:
+#0 C:\xampp\htdocs\ProgRentCar\apiprogrentcar\cliente\cliente.php(101): PDOStatement->execute()
+#1 C:\xampp\htdocs\ProgRentCar\apiprogrentcar\cliente\agregar.php(43): cliente->create()
+#2 {main}
+23-10-16 08:48:26 - Error al insertar datos usuario 5 
+PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'apellido' in 'field list' in C:\xampp\htdocs\ProgRentCar\apiprogrentcar\cliente\cliente.php:101
+Stack trace:
+#0 C:\xampp\htdocs\ProgRentCar\apiprogrentcar\cliente\cliente.php(101): PDOStatement->execute()
+#1 C:\xampp\htdocs\ProgRentCar\apiprogrentcar\cliente\agregar.php(43): cliente->create()
+#2 {main}
+23-10-16 09:21:50 - Error al insertar datos renta 5 
+PDOException: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens in C:\xampp\htdocs\ProgRentCar\apiprogrentcar\renta\renta.php:180
+Stack trace:
+#0 C:\xampp\htdocs\ProgRentCar\apiprogrentcar\renta\renta.php(180): PDOStatement->execute()
+#1 C:\xampp\htdocs\ProgRentCar\apiprogrentcar\renta\editar.php(47): renta->update()
+#2 {main}
+23-10-16 09:26:06 - Error al insertar datos renta 5 
+PDOException: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens in C:\xampp\htdocs\ProgRentCar\apiprogrentcar\renta\renta.php:180
+Stack trace:
+#0 C:\xampp\htdocs\ProgRentCar\apiprogrentcar\renta\renta.php(180): PDOStatement->execute()
+#1 C:\xampp\htdocs\ProgRentCar\apiprogrentcar\renta\editar.php(47): renta->update()
+#2 {main}
+23-10-16 09:28:22 - Error al insertar datos renta 5 
+PDOException: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens in C:\xampp\htdocs\ProgRentCar\apiprogrentcar\renta\renta.php:180
+Stack trace:
+#0 C:\xampp\htdocs\ProgRentCar\apiprogrentcar\renta\renta.php(180): PDOStatement->execute()
+#1 C:\xampp\htdocs\ProgRentCar\apiprogrentcar\renta\editar.php(47): renta->update()
+#2 {main}
+23-10-16 09:29:30 - Error al insertar datos renta 5 
+PDOException: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens in C:\xampp\htdocs\ProgRentCar\apiprogrentcar\renta\renta.php:180
+Stack trace:
+#0 C:\xampp\htdocs\ProgRentCar\apiprogrentcar\renta\renta.php(180): PDOStatement->execute()
+#1 C:\xampp\htdocs\ProgRentCar\apiprogrentcar\renta\editar.php(47): renta->update()
+#2 {main}
