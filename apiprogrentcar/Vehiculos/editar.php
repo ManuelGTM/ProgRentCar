@@ -1,14 +1,14 @@
 <?php
-    //agregar recepcion
+
     include_once '../config/core.php';
-    include_once 'recepcion.php';
+    include_once 'vehiculo.php';
      
     // get database connection
     $database = new Database();
     $db = $database->getConnection();
-    use \Firebase\JWT\JWT; 
+    use \Firebase\JWT\JWT;
     // instantiate  object
-    $datos = new recepcion($db);
+    $datos = new vehiculo($db);
      
     // retrieve given jwt here
     // get posted data
@@ -16,31 +16,36 @@
     
     // get jwt
     $jwt=isset($data->jwt) ? $data->jwt : "";
+     
     // decode jwt here
     // if jwt is not empty
-   if($jwt){
+    if($jwt){
      
         // if decode succeed, show datos details
         try {
      
-      
-            // set datos property values
        
-          
-       $datos->id_renta = $data->id_renta;
-       $datos->id_cliente = $data->id_cliente;
-       $datos->monto_recepcion = $data->monto_recepcion;
-       $datos->nivel_tanque = $data->nivel_tanque;
-       $datos->kilometro_llegada = $data->kilometro_llegada;
-       $datos->fecha_entrada = $data->fecha_entrada;
-       $datos->hora_entrada = $data->hora_entrada;
-       $datos->minuto_entrada = $data->minuto_entrada;
-       $datos->horario_entrada = $data->horario_entrada;
-
+            // set datos property values
+      
+       $datos->id_vehiculo = $data->id_vehiculo;      
+       $datos->numbero_ficha = $data->numbero_ficha;      
+       $datos->id_marca = $data->id_marca;      
+       $datos->id_modelo = $data->id_modelo;      
+       $datos->minimo_deposito = $data->minimo_deposito;      
+       $datos->color = $data->color;
+       $datos->chasis = $data->chasis;
+       $datos->placa = $data->placa;
+       $datos->kms = $data->kms;
+       $datos->ano = $data->ano;
+       $datos->matricula = $data->matricula;
+       $datos->cilindros = $data->cilindros;
+       $datos->estado = $data->estado;
+     
+    
         // update datos will be here
         
     
-             $dat = $datos->create();
+             $dat = $datos->update();
         // update the datos record
     
     
@@ -51,8 +56,8 @@
     
             $json = array(
               "status" 	=> "true",
-              "errcode"	=> "01",
-              "msg"		=> "Datos procesados correctamente"
+              "errcode" 	=> "01",
+              "msg" 		=> "Datos procesados correctamente"
               );
              
             // response in json format
@@ -68,8 +73,9 @@
               $json = array(
             "status" 	=> "true",
             "errCode" 	=> "00",
-            "msg" 		=> "Error al insertar datos 'recepcion'"
+            "msg" 		=> "Error al actualizar datos Empresa"
             );
+          
             echo json_encode($json);	
         }
         }
@@ -82,11 +88,10 @@
     
       $json = array(
         "status" 	=> "true",
-        "errCode" 	=> "05",
+        "errCode" 	=> "00",
         "msg" 		=> "Acceso denegado"
         );
-        
-      echo json_encode($json);
+         echo json_encode($json);
     }
     }
      // show error message if jwt is empty
@@ -98,7 +103,7 @@
         // tell the datos access denied
       $json = array(
         "status" 	=> "true",
-        "errCode" 	=> "00",
+        "errCode" 	=> "05",
         "msg" 		=> "Acceso denegado"
         );
       

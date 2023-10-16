@@ -1,14 +1,14 @@
 <?php
-    //agregar recepcion
+
     include_once '../config/core.php';
-    include_once 'recepcion.php';
+    include_once 'vehiculo.php';
      
     // get database connection
     $database = new Database();
     $db = $database->getConnection();
-    use \Firebase\JWT\JWT; 
+
     // instantiate  object
-    $datos = new recepcion($db);
+    $datos = new vehiculo($db);
      
     // retrieve given jwt here
     // get posted data
@@ -16,60 +16,46 @@
     
     // get jwt
     $jwt=isset($data->jwt) ? $data->jwt : "";
-    // decode jwt here
-    // if jwt is not empty
-   if($jwt){
+
+   $datos->id_vehiculo = $data->id_vehiculo;
+
+    if($jwt){
      
         // if decode succeed, show datos details
         try {
+    
      
-      
-            // set datos property values
-       
-          
-       $datos->id_renta = $data->id_renta;
-       $datos->id_cliente = $data->id_cliente;
-       $datos->monto_recepcion = $data->monto_recepcion;
-       $datos->nivel_tanque = $data->nivel_tanque;
-       $datos->kilometro_llegada = $data->kilometro_llegada;
-       $datos->fecha_entrada = $data->fecha_entrada;
-       $datos->hora_entrada = $data->hora_entrada;
-       $datos->minuto_entrada = $data->minuto_entrada;
-       $datos->horario_entrada = $data->horario_entrada;
-
-        // update datos will be here
-        
-    
-             $dat = $datos->create();
         // update the datos record
-    
-    
-        if($dat){
+      
+            $stmt = $datos->getOne();
+            $itemCount = $stmt->rowCount();
         
+    
+             if($itemCount > 0){
+                 $datos =   $stmt->fetchall(PDO::FETCH_ASSOC);
             // set response code
             http_response_code(200);
     
             $json = array(
               "status" 	=> "true",
-              "errcode"	=> "01",
-              "msg"		=> "Datos procesados correctamente"
-              );
-             
+              "errcode" 	=> "01",
+              "msg" 		=> "Datos procesados",
+              "data"      =>$datos
+            );
+        
             // response in json format
-            echo json_encode($json );
-        }
-         
-        // message if unable to update datos
-        else{
+            echo json_encode  ($json);
+        }else{
             // set response code
             http_response_code(200);
          
             // show error message
               $json = array(
             "status" 	=> "true",
-            "errCode" 	=> "00",
-            "msg" 		=> "Error al insertar datos 'recepcion'"
+            "errCode" 	=> "99",
+            "msg" 		=> "No Existen datos"
             );
+           
             echo json_encode($json);	
         }
         }
@@ -85,8 +71,8 @@
         "errCode" 	=> "05",
         "msg" 		=> "Acceso denegado"
         );
-        
-      echo json_encode($json);
+       
+        echo json_encode($json);
     }
     }
      // show error message if jwt is empty
@@ -101,7 +87,8 @@
         "errCode" 	=> "00",
         "msg" 		=> "Acceso denegado"
         );
-      
+        
         echo json_encode($json);
     }
+
     ?>

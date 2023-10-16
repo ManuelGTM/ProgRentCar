@@ -32,7 +32,7 @@
        $datos->id_cliente = $data->id_cliente;
        $datos->monto_recepcion = $data->monto_recepcion;
        $datos->nivel_tanque = $data->nivel_tanque;
-       $datos->kilomentro_llegada = $data->kilomentro_llegada;
+       $datos->kilometro_llegada = $data->kilometro_llegada;
        $datos->fecha_entrada = $data->fecha_entrada;
        $datos->hora_entrada = $data->hora_entrada;
        $datos->minuto_entrada = $data->minuto_entrada;

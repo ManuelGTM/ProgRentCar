@@ -5,10 +5,15 @@ class recepcion {
 private $conn;
 
 public $id_recepcion;
-public $nombre;
-public $recepcion;
-public $clave;
-public $estado;
+public $id_renta;
+public $id_cliente;
+public $monto_recepcion;
+public $nivel_tanque;
+public $kilometro_llegada;
+public $fecha_entrada;
+public $hora_entrada;
+public $minuto_entrada;
+public $horario_entrada;
 
      // constructor
 public function __construct($db){
@@ -80,8 +85,8 @@ $this->horario_entrada=htmlspecialchars(strip_tags($this->horario_entrada));
 $stmt->bindParam(':id_renta', $this->id_renta);
 $stmt->bindParam(':id_cliente', $this->id_cliente);
 $stmt->bindParam(':monto_recepcion', $this->monto_recepcion);
-$stmt->bindParam(':kilomentro_llegada', $this->kilometro_llegada);
 $stmt->bindParam(':nivel_tanque', $this->nivel_tanque);
+$stmt->bindParam(':kilometro_llegada', $this->kilometro_llegada);
 $stmt->bindParam(':fecha_entrada', $this->fecha_entrada);
 $stmt->bindParam(':hora_entrada', $this->hora_entrada);
 $stmt->bindParam(':minuto_entrada', $this->minuto_entrada);
@@ -120,7 +125,7 @@ $stmt->bindParam(':horario_entrada', $this->horario_entrada);
          fecha_entrada     = :fecha_entrada,
          hora_entrada      = :hora_entrada,
          minuto_entrada    = :minuto_entrada,
-         horario_entrada   = :horario_entrada
+         horario_entrada   = :horario_entrada,
        WHERE id_recepcion  = :id_recepcion" ;
       
       
@@ -140,11 +145,12 @@ $this->hora_entrada=htmlspecialchars(strip_tags($this->hora_entrada));
 $this->minuto_entrada=htmlspecialchars(strip_tags($this->minuto_entrada));
 $this->horario_entrada=htmlspecialchars(strip_tags($this->horario_entrada));
 
+$stmt->bindParam(':id_recepcion', $this->id_recepcion);
 $stmt->bindParam(':id_renta', $this->id_renta);
 $stmt->bindParam(':id_cliente', $this->id_cliente);
 $stmt->bindParam(':monto_recepcion', $this->monto_recepcion);
-$stmt->bindParam(':kilomentro_llegada', $this->kilometro_llegada);
 $stmt->bindParam(':nivel_tanque', $this->nivel_tanque);
+$stmt->bindParam(':kilometro_llegada', $this->kilometro_llegada);
 $stmt->bindParam(':fecha_entrada', $this->fecha_entrada);
 $stmt->bindParam(':hora_entrada', $this->hora_entrada);
 $stmt->bindParam(':minuto_entrada', $this->minuto_entrada);
@@ -157,7 +163,7 @@ $stmt->bindParam(':horario_entrada', $this->horario_entrada);
    }
    
 }catch(PDOException $exception){
-   wh_log( date("y-m-d H:i:s"). " - ".   "Error al insertar datos recepcion 5 ".  $table );
+   wh_log( date("y-m-d H:i:s"). " - ".   "Error al insertar datos recepcion 5 ". $table);
    wh_log( $exception   );
    
    
